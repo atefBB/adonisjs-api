@@ -24,9 +24,11 @@ Route.get("/", async () => {
     return "Hello world from a slim app";
 });
 
-Route.get("/api/v1", async ({ response }) => {
-    return response.json({
-        error: false,
-        message: "Hello world from the app",
+Route.group(() => {
+    Route.get("/", ({ response }) => {
+        return response.json({
+            error: false,
+            message: "Hello world from the app",
+        });
     });
-});
+}).prefix("/api/v1");
