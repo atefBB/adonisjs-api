@@ -1,6 +1,6 @@
-import { test } from "@japa/runner";
+import { test as it } from "@japa/runner";
 
-test("display welcome page", async ({ client }) => {
+it("display welcome page", async ({ client }) => {
     const response = await client.get("/");
 
     response.assertStatus(200);
