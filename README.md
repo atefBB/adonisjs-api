@@ -2,4 +2,4 @@
 Api app based on AdonisJS framework.
 
 # Authors
-- [Atef Ben Ali](github.com/atefBB)
+- [Atef Ben Ali](http://github.com/atefBB)
