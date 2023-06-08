@@ -23,3 +23,10 @@ import Route from "@ioc:Adonis/Core/Route";
 Route.get("/", async () => {
     return "Hello world from a slim app";
 });
+
+Route.get("/api/v1", async ({ response }) => {
+    return response.json({
+        error: false,
+        message: "Hello world from the app",
+    });
+});
