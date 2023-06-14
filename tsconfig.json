@@ -7,10 +7,10 @@
         "rootDir": "./",
         "sourceMap": true,
         "paths": {
-            "app/*": ["./app/*"],
-            "config/*": ["./config/*"],
-            "contracts/*": ["./contracts/*"],
-            "db/*": ["./database/*"]
+            "@app/*": ["./app/*"],
+            "@config/*": ["./config/*"],
+            "@contracts/*": ["./contracts/*"],
+            "@db/*": ["./database/*"]
         },
         "types": [
             "@adonisjs/core",
